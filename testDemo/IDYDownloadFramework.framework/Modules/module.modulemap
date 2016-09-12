@@ -1,0 +1,6 @@
+framework module IDYDownloadFramework {
+  umbrella header "IDYDownloadFramework.h"
+
+  export *
+  module * { export * }
+}

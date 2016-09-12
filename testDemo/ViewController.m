@@ -9,7 +9,8 @@
 #import "ViewController.h"
 #import <AVFoundation/AVFoundation.h>
 #import <AVKit/AVPlayerViewController.h>
-#import "IDYDownloadManager.h"
+#import "IDYDownloadFramework.framework/PrivateHeaders/IDYDownloadManager.h"
+#import "IDYVideoManagerTableViewController.h"
 
 @interface ViewController ()
 @property (nonatomic, strong) IDYButton  *completeButton;               /* 完成 */
@@ -24,6 +25,12 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.completeButton];
+    
+    
+    IDYVideoManagerTableViewController *managerVC = [[IDYVideoManagerTableViewController alloc] init];
+    [self.navigationController pushViewController:managerVC animated:YES];
+    
+    
     
     [[IDYDownloadManager shareInstanceManager] requestWithUrl:[NSURL URLWithString:@"http://baobab.wdjcdn.com/1455968234865481297704.mp4"] fileName:@"1008.mp4"];
     [[IDYDownloadManager shareInstanceManager] requestWithUrl:[NSURL URLWithString:@"http://baobab.wdjcdn.com/1458625865688ONE.mp4"] fileName:@"1009.mp4"];

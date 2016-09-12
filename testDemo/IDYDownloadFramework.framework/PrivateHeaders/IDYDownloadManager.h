@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "IDYSessionManager.h"
 
 typedef void (^SessionRequestSpeed) (NSString *speed);
 

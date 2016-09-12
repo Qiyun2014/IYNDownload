@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AB62C8211D813B930036A138 /* IDYSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AB62C8201D813B930036A138 /* IDYSessionManager.m */; };
-		AB62C8241D8154730036A138 /* IDYDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AB62C8231D8154730036A138 /* IDYDownloadManager.m */; };
 		AB69C4981D79232F00DAA539 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AB69C4971D79232F00DAA539 /* main.m */; };
 		AB69C49B1D79232F00DAA539 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB69C49A1D79232F00DAA539 /* AppDelegate.m */; };
 		AB69C49E1D79232F00DAA539 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB69C49D1D79232F00DAA539 /* ViewController.m */; };
@@ -20,6 +18,10 @@
 		AB69C4CC1D79234300DAA539 /* DYUBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB69C4CB1D79234300DAA539 /* DYUBaseViewController.m */; };
 		AB69C4CF1D79236600DAA539 /* UIImage+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = AB69C4CE1D79236600DAA539 /* UIImage+Utils.m */; };
 		AB69C4D11D7923FA00DAA539 /* IDYVideoUpload.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB69C4D01D7923FA00DAA539 /* IDYVideoUpload.xcassets */; };
+		AB7279901D8647F800207330 /* IDYVideoManagerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB72798F1D8647F800207330 /* IDYVideoManagerTableViewController.m */; };
+		ABC7F8731D86521700012430 /* IDYDownloadFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABC7F8721D86521700012430 /* IDYDownloadFramework.framework */; };
+		ABC7F8761D86525E00012430 /* IDYDownloadFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABC7F8721D86521700012430 /* IDYDownloadFramework.framework */; };
+		ABC7F8771D86525E00012430 /* IDYDownloadFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ABC7F8721D86521700012430 /* IDYDownloadFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,11 +41,21 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		AB7279931D86499A00207330 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				ABC7F8771D86525E00012430 /* IDYDownloadFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		AB62C81F1D813B930036A138 /* IDYSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDYSessionManager.h; sourceTree = "<group>"; };
-		AB62C8201D813B930036A138 /* IDYSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDYSessionManager.m; sourceTree = "<group>"; };
-		AB62C8221D8154730036A138 /* IDYDownloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDYDownloadManager.h; sourceTree = "<group>"; };
-		AB62C8231D8154730036A138 /* IDYDownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDYDownloadManager.m; sourceTree = "<group>"; };
 		AB69C4931D79232F00DAA539 /* testDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB69C4971D79232F00DAA539 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AB69C4991D79232F00DAA539 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -66,6 +78,9 @@
 		AB69C4CD1D79236600DAA539 /* UIImage+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Utils.h"; sourceTree = "<group>"; };
 		AB69C4CE1D79236600DAA539 /* UIImage+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Utils.m"; sourceTree = "<group>"; };
 		AB69C4D01D7923FA00DAA539 /* IDYVideoUpload.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = IDYVideoUpload.xcassets; sourceTree = "<group>"; };
+		AB72798E1D8647F800207330 /* IDYVideoManagerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDYVideoManagerTableViewController.h; sourceTree = "<group>"; };
+		AB72798F1D8647F800207330 /* IDYVideoManagerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDYVideoManagerTableViewController.m; sourceTree = "<group>"; };
+		ABC7F8721D86521700012430 /* IDYDownloadFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IDYDownloadFramework.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +88,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABC7F8761D86525E00012430 /* IDYDownloadFramework.framework in Frameworks */,
+				ABC7F8731D86521700012430 /* IDYDownloadFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,6 +133,7 @@
 		AB69C4951D79232F00DAA539 /* testDemo */ = {
 			isa = PBXGroup;
 			children = (
+				ABC7F8721D86521700012430 /* IDYDownloadFramework.framework */,
 				AB69C4D01D7923FA00DAA539 /* IDYVideoUpload.xcassets */,
 				AB69C4CD1D79236600DAA539 /* UIImage+Utils.h */,
 				AB69C4CE1D79236600DAA539 /* UIImage+Utils.m */,
@@ -124,12 +142,10 @@
 				AB69C4CB1D79234300DAA539 /* DYUBaseViewController.m */,
 				AB69C4991D79232F00DAA539 /* AppDelegate.h */,
 				AB69C49A1D79232F00DAA539 /* AppDelegate.m */,
-				AB62C81F1D813B930036A138 /* IDYSessionManager.h */,
-				AB62C8201D813B930036A138 /* IDYSessionManager.m */,
-				AB62C8221D8154730036A138 /* IDYDownloadManager.h */,
-				AB62C8231D8154730036A138 /* IDYDownloadManager.m */,
 				AB69C49C1D79232F00DAA539 /* ViewController.h */,
 				AB69C49D1D79232F00DAA539 /* ViewController.m */,
+				AB72798E1D8647F800207330 /* IDYVideoManagerTableViewController.h */,
+				AB72798F1D8647F800207330 /* IDYVideoManagerTableViewController.m */,
 				AB69C49F1D79232F00DAA539 /* Main.storyboard */,
 				AB69C4A21D79232F00DAA539 /* Assets.xcassets */,
 				AB69C4A41D79232F00DAA539 /* LaunchScreen.storyboard */,
@@ -175,6 +191,7 @@
 				AB69C48F1D79232F00DAA539 /* Sources */,
 				AB69C4901D79232F00DAA539 /* Frameworks */,
 				AB69C4911D79232F00DAA539 /* Resources */,
+				AB7279931D86499A00207330 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -232,6 +249,7 @@
 				TargetAttributes = {
 					AB69C4921D79232F00DAA539 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = VLZ8G467JP;
 					};
 					AB69C4AB1D79232F00DAA539 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -296,13 +314,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB7279901D8647F800207330 /* IDYVideoManagerTableViewController.m in Sources */,
 				AB69C49E1D79232F00DAA539 /* ViewController.m in Sources */,
-				AB62C8211D813B930036A138 /* IDYSessionManager.m in Sources */,
 				AB69C49B1D79232F00DAA539 /* AppDelegate.m in Sources */,
 				AB69C4CC1D79234300DAA539 /* DYUBaseViewController.m in Sources */,
 				AB69C4981D79232F00DAA539 /* main.m in Sources */,
 				AB69C4CF1D79236600DAA539 /* UIImage+Utils.m in Sources */,
-				AB62C8241D8154730036A138 /* IDYDownloadManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,10 +462,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/testDemo",
+				);
 				INFOPLIST_FILE = testDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.douyu.tv.application.testDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -456,10 +480,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/testDemo",
+				);
 				INFOPLIST_FILE = testDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.douyu.tv.application.testDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
